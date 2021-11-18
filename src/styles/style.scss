@@ -28,7 +28,7 @@ body {
 
 .header {
 	background-color: #84d57599;
-	// background-image: url("/src/images/backmenu.png");
+	// background-image: url("/src/images/backmenu.png"); // комментарии такие лучше не оставлять
 	
 
 }
@@ -41,7 +41,7 @@ body {
 		float: left;
 		margin-right: 5px;
 
-
+// внимательнее к ненужным пробелам
 	}
 
 	&__item-link {
@@ -79,7 +79,7 @@ body {
 		padding: 20px;
 		border-radius: 10%;
 		box-shadow: 5px 3px 4px 2px grey;
-		background-color: #ecd6ef;
+		background-color: #ecd6ef; // цвета занести в переменные
 		width: 250px;
 		height: 400px;
 		
