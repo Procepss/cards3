@@ -1,0 +1,53 @@
+// colors
+$c-green: #91d33a;
+$c-yellow: #84d57599;
+$c-shadow_black: #00000066;
+$c-blue: rgb(151, 131, 240);
+$c-green2: rgb(22, 218, 22);
+
+// fonts
+@font-face {
+	font-family: 'MyFont';
+	src: url('../fonts/font.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+  }
+
+@mixin elementCenter1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+@mixin elementCenter2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+// адаптив
+@media screen and (max-width: 945px) {
+    .cards {
+		&__veggie {
+
+		flex-wrap: wrap;
+    	}
+
+		&__fruits {
+			flex-wrap: wrap;
+			
+		}
+
+		&__item {
+			margin-top: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+
+    .footer{
+        flex-direction: column;
+
+		}
+}
