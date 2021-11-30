@@ -170,4 +170,20 @@ body {
 	
 }
 
+.review {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2vw
+
+	
+}
+
+.review > div {
+	font-size: 5vw;
+  	padding: .5em;
+  	background: gold;
+  	text-align: center;
+}
+
 
