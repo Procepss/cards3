@@ -1,195 +1,190 @@
 @font-face {
-	font-family: 'MyFont';
-	src: url('../fonts/font.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
-  }
-  
+  font-family: "MyFont";
+  src: url("../fonts/font.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
 html {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-	background-image:url("/src/images/fon.png");
+  background-image: url("/src/images/fon.png");
 }
 
-
-  #wrapper {
-	font-family: 'MyFont';
-	text-align: center;
-	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
+#wrapper {
+  font-family: "MyFont";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .header {
-	background-color: #84d57599;
-	// background-image: url("/src/images/backmenu.png"); // комментарии такие лучше не оставлять
-	
+  background-color: #84d57599;
+  // background-image: url("/src/images/backmenu.png"); // комментарии такие лучше не оставлять
 
+  // внимательнее к ненужным пробелам
 }
-
 
 .menu {
-	list-style: none;
-	
-	&__item {
-		float: left;
-		margin-right: 5px;
+  list-style: none;
 
-// внимательнее к ненужным пробелам
-	}
+  &__item {
+    float: left;
+    margin-right: 5px;
 
-	&__item-link {
-		text-decoration: none;
-		background-color: #30A8E6;
-		color: #fff;
-		border-radius: 4px;
-		padding: 8px;
-		-moz-transition: all 0.3s 0.01s ease;
-		-o-transition: all 0.3s 0.01s ease;
-		-webkit-transition: all 0.3s 0.01s ease;
+    // внимательнее к ненужным пробелам
+  }
 
-		&:hover {
-			background:#1C85BB;
-		}
-	}
+  &__item-link {
+    text-decoration: none;
+    background-color: #30a8e6;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    -moz-transition: all 0.3s 0.01s ease;
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+
+    &:hover {
+      background: #1c85bb;
+    }
+  }
 }
-	
+
 .cards {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
-	
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 
-	&__veggie,
-	&__fruits {
-		display: flex;
-		justify-content: space-around;
-		margin-top: 30px;
-	}
+  &__veggie,
+  &__fruits {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
 
+  &__item {
+    position: relative;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 5px 3px 4px 2px grey;
+    background-color: #ecd6ef; // цвета занести в переменные!
+    width: 250px;
+    height: 400px;
 
-	&__item {
-		position: relative;
-		padding: 20px;
-		border-radius: 10%;
-		box-shadow: 5px 3px 4px 2px grey;
-		background-color: #ecd6ef; // цвета занести в переменные
-		width: 250px;
-		height: 400px;
-		
-			&::before {
-				position: absolute;
-				content: '';
-				background-image: url("/src/images/clip.png");
-				width: 50px;
-				height: 50 px;
-				// top: ;
-				// left: ;
-				background-repeat: no-repeat;
-			}
-	}
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("/src/images/clip.png");
+      width: 50px;
+      height: 50 px;
+      // top: ;
+      // left: ;
+      background-repeat: no-repeat;
+    }
+  }
 
-	&__item--aqua {
-		background-color: #91d33a;
-	}
-	
-	&__item-decor {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		&:hover {
-			transform: scale(1.2);
-			transition: all 0.5s;
-		}
-	}
+  &__item--aqua {
+    background-color: #91d33a;
+  }
 
-	&__item-image {
-		width: 160px;
-		height: 160px;
-		object-fit: cover;
-		border-radius: 35%;
-	}
+  &__item-decor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s;
+    }
+  }
 
-	&__item-text {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+  &__item-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 35%;
+  }
 
-	&__item-text-headding {
-		font-size: 21px;
-		font-weight: bold;
-	}
+  &__item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-	&__item-text-dsrpn {
-		font-size: 15 px;
-		position: absolute;
-		top: 220px;
-		right: 10px;
-		left: 10px;
-	}
+  &__item-text-headding {
+    font-size: 21px;
+    font-weight: bold;
+  }
 
-	&__item-action {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute;
-		right: 0;
-		left: 0;
-		bottom: 48px;
-	}
+  &__item-text-dsrpn {
+    font-size: 15 px;
+    position: absolute;
+    top: 220px;
+    right: 10px;
+    left: 10px;
+  }
 
-	&__item-action-btn {
-		background-color: rgb(151, 131, 240);
-		border: none;
-		color: white;
-		padding: 10px 35px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 15px;
+  &__item-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 48px;
+  }
 
-		&:hover {
-			background-color: rgb(22, 218, 22);
-			transition: all 0.2s;
-			transform: scale(1.2);
-			border-radius: 15%;
-			cursor: pointer;
-			font-weight: 600;
+  &__item-action-btn {
+    background-color: rgb(151, 131, 240);
+    border: none;
+    color: white;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
 
-		}
-	}
-	
-	
+    &:hover {
+      background-color: rgb(22, 218, 22);
+      transition: all 0.2s;
+      transform: scale(1.2);
+      border-radius: 15%;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
 }
 
 @media screen and (max-width: 945px) {
-    .cards {
-		&__veggie {
+  .cards {
+    &__veggie {
+      flex-wrap: wrap;
+    }
 
-		flex-wrap: wrap;
-    	}
+    &__fruits {
+      flex-wrap: wrap;
+    }
 
-		&__fruits {
-			flex-wrap: wrap;
-			
-		}
+    &__item {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
 
-		&__item {
-			margin-top: 15px;
-			margin-left: 15px;
-			margin-right: 15px;
-		}
-	}
-
-    .footer{
-        flex-direction: column;
-
-		}
+  .footer {
+    // тут тоже не понятно (типа все привести к одному виду)
+    flex-direction: column;
+  }
 }
+
+// изучить что такое миксины(примеси) в sass(scss) и заиспользовать их тут в стилях
+
+// заюзать переменные!!!!
