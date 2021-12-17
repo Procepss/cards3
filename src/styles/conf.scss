@@ -4,6 +4,12 @@ $c-yellow: #84d57599;
 $c-shadow_black: #00000066;
 $c-blue: rgb(151, 131, 240);
 $c-green2: rgb(22, 218, 22);
+$c-blue2: #30a8e6;
+$c-white: #ecd6ef;
+$c-pink: #e5a6facc;
+$c-black: #261818;
+$c-red: #494949;
+$c-lilac: #91b9dd61;
 
 // fonts
 @font-face {
@@ -12,6 +18,7 @@ $c-green2: rgb(22, 218, 22);
 	font-weight: 600;
 	font-style: normal;
   }
+
 
 @mixin elementCenter1 {
 	display: flex;
