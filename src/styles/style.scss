@@ -185,7 +185,7 @@ body {
 	@include elementCenter2;
 	display: grid;
     justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;   // как сократить этот код
     grid-template-columns: 0fr 0fr 0fr;
     grid-gap: 2vw;
 
